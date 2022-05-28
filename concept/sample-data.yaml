@@ -1,0 +1,12 @@
+adubação:
+  data: "2022-27-06" # ✅
+  hora: null  # ✅
+  produto-utilizado:
+    - produto: # ✅
+        nome: "mix-adubo" # ✅
+        descrição: | # ✅
+          mistura de 4.14.08
+          com 20.0.20
+      quantidade: 200 # em gramas ✅
+      aplicadoEm: 1 # ✅
+      unidadeAplicação: "planta" # ["planta", "metro_quadrado"] ✅
