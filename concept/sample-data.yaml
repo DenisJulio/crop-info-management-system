@@ -10,3 +10,14 @@ adubação:
       quantidade: 200 # em gramas ✅
       aplicadoEm: 1 # ✅
       unidadeAplicação: "planta" # ["planta", "metro_quadrado"] ✅
+      
+colheita:
+  data-colheita: 0001-01-01
+  total-plantação-colhida: 0.0
+  unidade-plantação-colhida: enum # [metro_quadrado, percentual, plantas]
+  quantidade-produzida: 0.0
+  unidade-produção: # tabela a parte, com uma instancia padrão para kilogramas
+    nome: nome_da_unidade 
+    em-kilogramas: 0.0 
+  
+     
