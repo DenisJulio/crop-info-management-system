@@ -19,5 +19,33 @@ colheita:
   unidade-produção: # tabela a parte, com uma instancia padrão para kilogramas
     nome: nome_da_unidade 
     em-kilogramas: 0.0 
+
+unidades:
+  unidades_id: 0
+  nome: 'nome-da-unidade'
+  em-kilogramas: 0.0 # valor da unidade expressa em kilogramas
+
+# TODO: precisa ser melhor definido a estrutura da informação colhida
+manejo-pragas:
+  manejo_pragas_id: 0
+  data: 'yyyy-mm-dd'
+  hora: 'hh:mm'
+  metodo-de-manejo-utilizado: 'enum' # enum com o nome do metodo utilizado 
+
+# metodos:
+aplicação-agrotoxico:
+  manejo_pragas_id: 0
+  quantidade-total-aplicada: 0.0
+  unidade-do-total-aplicado: # [kilogramas, litros]
+  produto-aplicado:
+    - produto:
+        id: 0
+        nome: 'nome-do-produto'
+        descrição: |
+          informação adicional sobre o produto utilizado
+      quantidade-produto-aplicado: 0.0
+      unidadade-do-produto-aplicado: 0 # unidades_id
+      diluido-em-litros: 0.0 
+
+metodo-alternativo:
   
-     
